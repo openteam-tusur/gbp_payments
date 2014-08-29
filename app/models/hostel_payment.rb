@@ -1,0 +1,2 @@
+class HostelPayment < Payment
+end

@@ -1,0 +1,2 @@
+class EducationPayment < Payment
+end

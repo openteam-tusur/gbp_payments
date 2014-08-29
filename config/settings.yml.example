@@ -1,0 +1,19 @@
+app:
+  secret:         SECRET
+
+http_basic_auth:
+  login:          LOGIN
+  password:       PASSWORD
+
+merchants:
+  education:
+    merch_id:     MERCH_ID
+    account_id:   ACCOUNT_ID
+
+  hostel:
+    merch_id:     MERCH_ID
+    account_id:   ACCOUNT_ID
+
+  internet:
+    merch_id:     MERCH_ID
+    account_id:   ACCOUNT_ID

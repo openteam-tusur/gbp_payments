@@ -1,0 +1,2 @@
+class InternetPayment < Payment
+end

@@ -1,0 +1,16 @@
+ru:
+  activerecord:
+    attributes:
+      payment:
+        full_name: ФИО
+        amount: Сумма платежа
+
+      education_payment:
+        number: Номер договора
+
+      internet_payment:
+        number: Номер договора
+
+      hostel_payment:
+        number: Номер комнаты
+
