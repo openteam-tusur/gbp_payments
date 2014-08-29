@@ -11,14 +11,11 @@ gem 'simple_form'
 gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'unicorn'
 
 group :development do
   gem 'hirb'
   gem 'openteam-capistrano', '~> 1.0.10'
   gem 'pry'
   gem 'spring'
-end
-
-group :production do
-  gem 'unicorn'
 end

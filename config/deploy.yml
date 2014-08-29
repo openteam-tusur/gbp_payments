@@ -1,0 +1,4 @@
+master:
+  gateway:              moros.tusur.ru
+  application:          gpb.openteam.ru
+  domain:               rvmuser@gpb
