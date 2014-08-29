@@ -1,13 +1,17 @@
-<%= simple_form_for @payment,
-  :as => :payment,
-  :url => send("payments_#{@payment.class.kind}_path"),
-  :html => { :novalidate => true } do |f| %>
+<div class="col-md-6 col-md-offset-3">
+  <%= simple_form_for @payment,
+    :as => :payment,
+    :url => send("payments_#{@payment.class.kind}_path"),
+    :html => { :novalidate => true } do |f| %>
 
-  <%= f.input :full_name %>
-  <%= f.input :number %>
-  <%= f.input :amount %>
-  <%= render :partial => "#{@payment.class.kind}_fields", :locals => { :f => f } %>
-  <%= f.button :submit %>
-<% end %>
+    <%= f.input :full_name %>
+    <%= f.input :number %>
+    <%= f.input :amount %>
+    <%= render :partial => "#{@payment.class.kind}_fields", :locals => { :f => f } %>
 
-<%= link_to 'back', root_path %>
+    <%= f.button :submit, 'Продолжить', :class => 'btn btn-primary' %>
+    или
+    <%= link_to 'Отмена', root_path %>
+  <% end %>
+</div>
+
