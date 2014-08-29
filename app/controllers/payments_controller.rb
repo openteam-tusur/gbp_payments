@@ -15,15 +15,13 @@ class PaymentsController < ApplicationController
   end
 
   def check
-    p '=== CHECK ==='
-    p params
+    Airbrake.notify :error_message => 'GPB: check', :parameters => params
 
     render :xml => CheckResponse.new.success(@payment)
   end
 
   def register
-    p '=== REGISTER ==='
-    p params
+    Airbrake.notify :error_message => 'GPB: register', :parameters => params
 
     render :xml => RegisterResponse.new.success
   end
