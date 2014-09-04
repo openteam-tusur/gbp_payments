@@ -12,9 +12,7 @@ class UrlBuilder
       :merch_id => @payment.merch_id,
       :back_url_s => root_url(:host => 'http://localhost:3000'),
       :back_url_f => root_url(:host => 'http://localhost:3000'),
-      :o => {
-        :payment_id => @payment.id
-      }
+      'o.payment_id' =>  @payment.id
     }
 
     uri.query = parameters.to_query
