@@ -1,6 +1,6 @@
 class PaymentsController < ApplicationController
   before_filter :build_payment, :only => [:new, :create]
-  before_filter :find_payment, :only => [:check]
+  before_filter :find_payment, :only => [:check, :register]
 
   http_basic_authenticate_with :name => Settings['http_basic_auth.login'],
     :password => Settings['http_basic_auth.password'],
