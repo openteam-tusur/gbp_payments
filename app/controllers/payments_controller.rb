@@ -38,6 +38,6 @@ class PaymentsController < ApplicationController
   end
 
   def find_payment
-    @payment = Payment.find(params[:o_payment_id])
+    @payment = Payment.find(params['o.payment_id'])
   end
 end
