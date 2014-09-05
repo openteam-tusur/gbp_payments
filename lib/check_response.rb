@@ -15,8 +15,8 @@ class CheckResponse
         xml.send 'merchant-trx', payment.id
 
         xml.send 'purchase' do
-          xml.send 'shortDesc', payment.short_desc
-          xml.send 'longDesc',  payment.long_desc
+          xml.send 'shortDesc', 'SHORT DESC'
+          xml.send 'longDesc',  'LONG DESCRIPTION'
 
           xml.send 'account-amount' do
             xml.send 'id',       payment.account_id
