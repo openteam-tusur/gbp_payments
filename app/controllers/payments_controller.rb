@@ -38,6 +38,6 @@ class PaymentsController < ApplicationController
   end
 
   def find_payment
-    @payment = Payment.first
+    @payment = Payment.find(params[:o_payment_id])
   end
 end
